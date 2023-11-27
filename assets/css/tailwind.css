@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Apply a tailwind style to a tag by default */
+body {
+    @apply bg-gray-50
+}
+
+/* Make a new component class that's a set of tailwind classes you want to reuse a lot */
+@layer components {
+    .btn {
+        @apply bg-[#12b488] text-white px-3 py-2 rounded-md text-sm text-white;
+        
+    }
+}
