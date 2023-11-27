@@ -1,20 +1,20 @@
 <template>
     <div>
-        <header>
-            <nav>
-                <NuxtLink to="/products">Nuxt Dojo Merch</NuxtLink>
+        <header class="shadow-sm bg-white">
+            <nav class="container mx-auto p-4">
+                <NuxtLink to="/products" class="font-bold">Nuxt Dojo Merch</NuxtLink>
             </nav>
         </header>
     </div>
 
     <!-- Output the page content -->
     <!-- Slot is a nuxt component that says "this is where the other stuff goes" -->
-    <div>
+    <div class="container mx-auto p-4">
         <slot />
     </div>
 
-    <footer>
-        <ul>
+    <footer class="container mx-auto p-4 flex justify-between border-t-2">
+        <ul class="flex gap-4">
             <li>
                 <NuxtLink to="/">Home</NuxtLink>
             </li>
