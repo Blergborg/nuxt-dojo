@@ -5,6 +5,7 @@
     <div>
         <header>
             <nav>
+                <NuxtLink to="/">Nuxt Dojo</NuxtLink>
                 <ul>
                     <li>
                         <!-- Instead of anchor (<a>) tags, Nuxt gives us these link components. -->
