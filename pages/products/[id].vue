@@ -10,6 +10,10 @@
 
     // Get route param value here. Should be the same as the name we gave the file in brackets.
     const { id } = useRoute().params
+
+    definePageMeta({
+        layout: 'products'
+    })
 </script>
 
 <style scoped>
