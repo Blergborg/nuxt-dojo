@@ -1,10 +1,6 @@
 <template>
     <div>
-        <p>Product Details for {{ id }}</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur ea dolorem minima amet repellendus reprehenderit!</p>
-        <p>{{ product.title }}</p>
-        <p>{{ product.price }}</p>
-        <p>{{ product.id }}</p>
+        <ProductDetails :product="product"/>
     </div>
 </template>
 
