@@ -17,6 +17,12 @@
     // default behavior of useFetch is to minimize requests.
     const {data: product} = await useFetch(uri, { key: id })
 
+    if (!product.value) {
+        // createError is a Nuxt function that lets us build errors.
+        // 'fatal' forces error.vue to show in the event of a browser-side error.
+        throw createError({ statusCode: 404, statusMessage: 'Product not found', fatal: true })
+    }
+
     definePageMeta({
         layout: 'products'
     })
