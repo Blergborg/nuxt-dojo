@@ -1,5 +1,10 @@
 <template>
     <div>
+        <!-- Another way we can override metadata is with the use of Nuxt components -->
+        <Head>
+            <Title>Nuxt Dojo | {{ product.title }}</Title>
+            <Meta name="description" :content="product.description"/>
+        </Head>
         <ProductDetails :product="product"/>
     </div>
 </template>
