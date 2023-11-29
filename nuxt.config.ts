@@ -17,5 +17,9 @@ export default defineNuxtConfig({
         {rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Material+Icons'}
       ]
     }
+  },
+  runtimeConfig: {
+    // api keys listed here will be available to server routes while running.
+    currencyKey: process.env.CURRENCY_API_KEY,
   }
 })
