@@ -9,7 +9,20 @@
 <script setup>
     // Can simply call our server routes like this. 
     // Then use the result as a variable just like the results of a 3rd party API call.
-    const data = await useFetch('/api/ninja?name=mario')
+
+    // GET request
+    // const data = await useFetch('/api/ninja?name=mario')
+
+    // POST request
+    const data = await useFetch('/api/ninja?name=mario', {
+        method: 'post',
+        body: {
+            age: 30
+        }
+    })
+
+    // 3rd party API request
+    // const data = await useFetch('api/ninja')
 </script>
 
 <style scoped>
