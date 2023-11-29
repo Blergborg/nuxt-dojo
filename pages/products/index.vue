@@ -19,6 +19,14 @@
 
     // fetch products (destructure the response's data property and call it products)
     const {data: products} = await useFetch('https://fakestoreapi.com/products')
+
+    // useHead() is a Nuxt composable function that allows us to override the global defaults set in nuxt.config.ts.
+    useHead({
+        title: 'Nuxt Dojo Merch',
+        meta: [
+            {name: 'description', content: 'Nuxt3 Merch'}
+        ]
+    })
 </script>
 
 <style scoped>
